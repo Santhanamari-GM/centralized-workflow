@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>centralized-workflow</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+
+    <div class="login-container">
+        <h2>Welcome Back</h2>
+        <form action="/login-endpoint" method="POST">
+            <h1>Hello World</h1>
+            <!-- Email Field -->
+            <div class="input-group">
+                <input type="email" id="email" name="email" required placeholder=" ">
+                <label for="email">Email Address</label>
+            </div>
+
+            <!-- Password Field -->
+            <div class="input-group">
+                <input type="password" id="password" name="password" required placeholder=" ">
+                <label for="password">Password</label>
+            </div>
+
+            <!-- Options Row -->
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox" name="remember"> Remember me
+                </label>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="login-btn">Sign In</button>
+
+            <!-- Signup Redirect -->
+            <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+    </div>
+
 </body>
 </html>
